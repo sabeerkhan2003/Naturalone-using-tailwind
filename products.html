@@ -11,12 +11,12 @@
     
     <nav class="bg-green-100 flex justify-between p-3 items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Naturalone</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menubut" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-
+        
 
         <ul class="flex gap-10 text-gray-600 hidden sm-flex md:flex">
             <li><a class=" hover:underline hover:text-black" href="./index.html">Home</a></li>
@@ -24,9 +24,21 @@
             <li><a class=" hover:underline hover:text-black" href="./Contact.html">Contact</a></li>
 
         </ul>
+    
+        <section id="options" class="bg-green-100 items-center transition-all duration-500 fixed z-20 top-0"
+        style="width: 50%; height:100vh; right:-50%">
+        <div class=" text-right p-5">
+            <p  id="navx" class=" inline cursor-pointer" >X</p>
+        </div>
+        <ul class=" flex flex-col gap-10  text-gray-600 items-center  sm-flex md:flex"> 
+            <li><a class=" hover:underline hover:text-black" href="./index.html">Home</a></li>
+            <li><a class=" hover:underline hover:text-black" href="./products.html">Products</a></li>
+            <li><a class=" hover:underline hover:text-black" href="./Contact.html">Contact</a></li>
+        </ul>
+    </section>
 
-    </nav>
     <!-- main -->
+    </nav>
      <section class="text-center">
         <h2 class="text-3xl font-bold text-center p-5">Our products</h2>
         <input class="border border-black p-2 m-3 mb-20" style="width: 80%;" >
@@ -74,5 +86,7 @@
             <p>$20</p>
         </div>
       </section>
+
+      <script src="./products.js"></script>
 </body>
 </html>
